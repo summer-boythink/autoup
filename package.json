@@ -1,0 +1,27 @@
+{
+  "name": "autoup",
+  "version": "1.0.5",
+  "description": "a Hot update module,support different types of files",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "bin": {
+    "autoup": "./dist/index.js"
+  },
+  "scripts": {
+    "test": "node src/index.js -f src/test.js -d dist/",
+    "init": "node src/index.js init",
+    "auto": "node src/index.js",
+    "build": "pkgroll"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "pkgroll": "^1.3.1"
+  }
+}
